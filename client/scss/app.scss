@@ -121,7 +121,7 @@
 // @import '../../node_modules/bitstyles/scss/bitstyles/objects/label';
 // @import '../../node_modules/bitstyles/scss/bitstyles/objects/link';
 // @import '../../node_modules/bitstyles/scss/bitstyles/objects/overflow';
-// @import '../../node_modules/bitstyles/scss/bitstyles/objects/object-cover';
+@import '../../node_modules/bitstyles/scss/bitstyles/objects/object-cover';
 //
 // ******** Add project-specific low-level objects here ********
 //
@@ -149,6 +149,7 @@
 //
 @import 'components/map';
 @import 'components/sidebar';
+@import 'components/unicorn';
 
 // Trumps
 //
