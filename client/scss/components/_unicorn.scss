@@ -1,0 +1,19 @@
+.c-unicorn {
+  @include fixed-ratio(3,3);
+  border-radius: $bitstyles-border-radius-round;
+  border: 1em solid $bitstyles-color-gray-10;
+  fill: $bitstyles-color-gray-10;
+  overflow: hidden;
+}
+
+.c-unicorn__image {
+  @include fixed-ratio__inner();
+
+  > * {
+    position: relative;
+    top: 10%;
+    right: 10%;
+    width: 110%;
+    height: 110%;
+  }
+}
