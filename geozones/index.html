@@ -66,6 +66,94 @@
 		});
 		map.addLayer(prenzlauer_berg);
 
+
+	// Friedrichshain
+
+		var friedrichshain = new L.KML("kml/admin10_berlin-friedrichshain.kml", {async: true});
+		friedrichshain.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#0000ff", fillOpacity: "0.7", color: "#0000ff", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(friedrichshain);
+
+	// treptow
+
+		var treptow = new L.KML("kml/admin10_berlin-alt-treptow.kml", {async: true});
+		treptow.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#000066", fillOpacity: "0.7", color: "#000066", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(treptow);
+
+	// koepenick
+
+		var koepenick = new L.KML("kml/admin10_berlin-koepenick.kml", {async: true});
+		koepenick.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#660000", fillOpacity: "0.7", color: "#660000", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(koepenick);
+
+	// lichtenberg
+
+		var lichtenberg = new L.KML("kml/admin10_berlin-lichtenberg.kml", {async: true});
+		lichtenberg.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#006600", fillOpacity: "0.7", color: "#006600", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(lichtenberg);
+
+
+	// schoeneberg
+
+		var schoeneberg = new L.KML("kml/admin10_berlin-schoeneberg.kml", {async: true});
+		schoeneberg.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#000066", fillOpacity: "0.7", color: "#000066", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(schoeneberg);
+
+
+	// neukoelln
+
+		var neukoelln = new L.KML("kml/admin10_berlin-neukoelln.kml", {async: true});
+		neukoelln.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#660066", fillOpacity: "0.7", color: "#660066", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(neukoelln);
+
+
+	// steglitz
+
+		var steglitz = new L.KML("kml/admin10_berlin-steglitz.kml", {async: true});
+		steglitz.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#006666", fillOpacity: "0.7", color: "#006666", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(steglitz);
+
 	</script>
 
 
