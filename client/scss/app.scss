@@ -1,0 +1,180 @@
+/* stylelint-disable max-empty-lines */
+// SETTINGS
+// **Global settings**.
+//
+// These are just the variables required at a global level. Settings for each layout,
+// object, and component class are imported within those respective Sass files.
+//
+// * No CSS output *
+
+//
+// ******** Add overrides for Bitstyles settings here ********
+//
+@import 'settings/topbar';
+@import '../../node_modules/bitstyles/scss/bitstyles/settings/global.setup';
+@import '../../node_modules/bitstyles/scss/bitstyles/settings/global.layout';
+@import '../../node_modules/bitstyles/scss/bitstyles/settings/global.breakpoints';
+@import '../../node_modules/bitstyles/scss/bitstyles/settings/global.animation';
+@import '../../node_modules/bitstyles/scss/bitstyles/settings/global.color-base';
+@import '../../node_modules/bitstyles/scss/bitstyles/settings/global.color-palette';
+@import '../../node_modules/bitstyles/scss/bitstyles/settings/global.typography';
+//
+// ******** Add global settings for your own project here ********
+//
+
+
+// Tools: Functions & Mixins
+//
+// **Mixins and functions**.
+//
+// Includes mixins we later use to build objects e.g. at different breakpoints,
+// and some we use only in the background as utilities.
+//
+// **No CSS output**
+//
+// Styleguide 1.0
+@import '../../node_modules/bitstyles/scss/bitstyles/tools/all';
+//
+// ******** Add project-specific tools here ********
+//
+
+
+// ******** GENERIC
+// These are the low-specificity, far-reaching rulesets (e.g. resets, normalise.css, box-sizing).
+@import '../../node_modules/bitstyles/scss/bitstyles/generic/all';
+
+// Base
+//
+// Here we’re styling unclassed html elements directly  e.g. `<a>`, `<blockquote>`
+// `<address>`.
+//
+// sg-wrapper:
+// <div class="object-section">
+//   <sg-wrapper-content/>
+// </div>
+//
+// Styleguide 2.0
+@import '../../node_modules/bitstyles/scss/bitstyles/base/all';
+
+@import 'base/html';
+
+// Layout
+//
+// **Create the high-level layout of a page**.
+//
+// Classes that take care of common layouts e.g. centred page content with some
+// padding at the sides so content doesn’t hit viewport edges, HTML grid system.
+//
+// Layout classes should be selectively imported.
+//
+// sg-wrapper:
+// <div class="object-section">
+//   <sg-wrapper-content/>
+// </div>
+//
+// Styleguide 3.0
+@import '../../node_modules/bitstyles/scss/bitstyles/layout/content';
+// @import '../../node_modules/bitstyles/scss/bitstyles/layout/grid';
+// @import '../../node_modules/bitstyles/scss/bitstyles/layout/width';
+@import '../../node_modules/bitstyles/scss/bitstyles/layout/topbar';
+
+
+// Objects
+//
+// **Objects, abstractions, and design patterns**
+// (e.g. .o-media, .o-icon, .o-button).
+//
+// Relatively cosmetic-free (colours can be specified by overriding relevant variables),
+// the object classes are layout patterns intended to be reused throughout the site
+// and composed together as needed.
+//
+// e.g. `<button class="o-button o-truncate-with-ellipsis"></button>` to create
+// a clickable button with interactive states, a large click area, and button-y
+// appearance, that also truncates its text when it’s too long for the button width.
+//
+// sg-wrapper:
+// <div class="object-section">
+//   <sg-wrapper-content/>
+// </div>
+//
+// Styleguide 4.0
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/icon';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/button';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/button--icon';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/absolute-center';
+@import '../../node_modules/bitstyles/scss/bitstyles/objects/absolute-cover';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/break-long-words';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/clearfix';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/fixed-ratio';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/hidden';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/truncate-with-ellipsis';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/vertical-center';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/visuallyhidden';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/flex';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/bordered-header';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/list-inline';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/list-reset';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/typography';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/media';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/block';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/input';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/label';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/link';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/overflow';
+// @import '../../node_modules/bitstyles/scss/bitstyles/objects/object-cover';
+//
+// ******** Add project-specific low-level objects here ********
+//
+
+
+// Components
+//
+// **Chunks of UI and structure for a reusable page element**
+//
+// Normally containing smaller objects e.g. a header or sidebar element.
+//
+// These are quite project-specific so bitstyles only includes a few very
+// generally-used components such as modals.
+//
+// sg-wrapper:
+// <div class="object-section">
+//   <sg-wrapper-content/>
+// </div>
+//
+// Styleguide 5.0
+// @import '../../node_modules/bitstyles/scss/bitstyles/components/modal';
+// @import '../../node_modules/bitstyles/scss/bitstyles/components/expander';
+//
+// ******** Add project-specific components here ********
+//
+@import 'components/map';
+@import 'components/sidebar';
+
+// Trumps
+//
+// **High-specificity overrides and helper classes**
+// These can be used to create exceptions to an object or component’s standard styles
+// e.g. `.t-margin--left` to add margin to an element that would otherwise have
+// margin set to zero.
+//
+// `!important` sometimes exists here, and that’s ok as no styles should follow this section.
+//
+// sg-wrapper:
+// <div class="object-section">
+//   <sg-wrapper-content/>
+// </div>
+//
+// Styleguide 6.0
+// @import '../../node_modules/bitstyles/scss/bitstyles/trumps/text-weight';
+// @import '../../node_modules/bitstyles/scss/bitstyles/trumps/text-align';
+// @import '../../node_modules/bitstyles/scss/bitstyles/trumps/text-style';
+// @import '../../node_modules/bitstyles/scss/bitstyles/trumps/margin';
+// @import '../../node_modules/bitstyles/scss/bitstyles/trumps/padding';
+// @import '../../node_modules/bitstyles/scss/bitstyles/trumps/no-margin';
+// @import '../../node_modules/bitstyles/scss/bitstyles/trumps/no-padding';
+// @import '../../node_modules/bitstyles/scss/bitstyles/trumps/color';
+// @import '../../node_modules/bitstyles/scss/bitstyles/trumps/background-color';
+//
+// ******** Add project-specific trumps here ********
+//
+/* stylelint-enable */
