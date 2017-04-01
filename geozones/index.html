@@ -177,6 +177,80 @@
 		});
 		map.addLayer(tiergarten);
 
+
+	// hohenschoenhausen
+
+		var hohenschoenhausen = new L.KML("kml/admin10_berlin-hohenschoenhausen.kml", {async: true});
+		hohenschoenhausen.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#000666", fillOpacity: "0.7", color: "#000666", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(hohenschoenhausen);
+
+	// hellesdorf
+
+		var hellesdorf = new L.KML("kml/admin10_berlin-hellesdorf.kml", {async: true});
+		hellesdorf.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#666000", fillOpacity: "0.7", color: "#666000", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(hellesdorf);
+
+	// marzahn
+
+		var marzahn = new L.KML("kml/admin10_berlin-marzahn.kml", {async: true});
+		marzahn.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#066006", fillOpacity: "0.7", color: "#066006", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(marzahn);
+
+
+	// neu-hohenschoenhausen
+
+		var neuhohenschoenhausen = new L.KML("kml/admin10_berlin-neu-hohenschoenhausen.kml", {async: true});
+		neuhohenschoenhausen.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#600660", fillOpacity: "0.7", color: "#600660", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(neuhohenschoenhausen);
+
+	// weissensee
+
+		var weissensee = new L.KML("kml/admin10_berlin-weissensee.kml", {async: true});
+		weissensee.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#060606", fillOpacity: "0.7", color: "#060606", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(weissensee);
+
+	// zehlendorf
+
+		var zehlendorf = new L.KML("kml/admin10_berlin-zehlendorf.kml", {async: true});
+		zehlendorf.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#060666", fillOpacity: "0.7", color: "#060666", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(zehlendorf);
+
 	</script>
 
 
