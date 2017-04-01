@@ -6,7 +6,7 @@ export default class MapContainer extends Component {
   render() {
     const position = [51.505, -0.09];
     return (
-      <Map center={position} zoom={13}>
+      <Map center={position} zoom={13} className="o-absolute-cover c-map">
         <TileLayer
           url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

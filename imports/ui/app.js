@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import MapContainer from './map.js';
+import Sidebar from './sidebar.js';
 
 // App component - represents the whole app
 export default class App extends Component {
@@ -10,13 +11,15 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="container">
-        <header>
+      <div>
+        <header className="l-topbar">
           <h1>Queer Happiness Map</h1>
         </header>
-
         <div>
-          {this.renderMap()}
+          <main role="main">
+            {this.renderMap()}
+          </main>
+          <Sidebar />
         </div>
       </div>
     );
