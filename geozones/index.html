@@ -66,7 +66,6 @@
 		});
 		map.addLayer(prenzlauer_berg);
 
-
 	// Friedrichshain
 
 		var friedrichshain = new L.KML("kml/admin10_berlin-friedrichshain.kml", {async: true});
@@ -102,6 +101,18 @@
 			});
 		});
 		map.addLayer(koepenick);
+
+	// Wedding
+
+		var wedding = new L.KML("kml/admin10_berlin-wedding.kml", {async: true});
+		wedding.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#00ff00", fillOpacity: "0.7", color: "#00ff00", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(wedding);
 
 	// lichtenberg
 
@@ -153,6 +164,18 @@
 			});
 		});
 		map.addLayer(steglitz);
+
+	// Tiergarten
+
+		var tiergarten = new L.KML("kml/admin10_berlin-tiergarten.kml", {async: true});
+		tiergarten.on("loaded", function(e) {
+			map.fitBounds(e.target.getBounds());
+			e.target.setStyle({fillColor: "#00ff00", fillOpacity: "0.7", color: "#00ff00", opacity: "0.2"});
+			e.target.addEventListener('click', function(event){
+				e.target.setStyle({fillOpacity: "1"});
+			});
+		});
+		map.addLayer(tiergarten);
 
 	</script>
 
