@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Diese Daten wurden aus der OSM-Datenbank extrahiert und stehen unter der 
+Open Database Licence (http://www.openstreetmap.org/copyright) frei zur Verfügung. 
+Quelle der Rohdaten: © OpenStreetMap-Mitwirkende (http://www.openstreetmap.org) 
+Generiert von: http://www.suche-postleitzahl.org 
+-->
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><Folder><name>Friedenau</name><Placemark><name>Friedenau</name><description>admin_level: 10</description><MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>13.31999,52.46716 13.32011,52.46981 13.32025,52.4699 13.32023,52.46993 13.32026,52.46995 13.32026,52.46997 13.32052,52.47013 13.32053,52.47027 13.32013,52.47052 13.32043,52.47747 13.32248,52.4775 13.33287,52.47742 13.33299,52.47785 13.33706,52.47813 13.33707,52.47852 13.34338,52.47859 13.3435,52.47831 13.34387,52.47815 13.34158,52.47643 13.33903,52.47443 13.33757,52.47323 13.33734,52.46845 13.33584,52.467 13.33485,52.4662 13.33466,52.46627 13.33144,52.46582 13.33076,52.46524 13.32937,52.46567 13.32815,52.46447 13.32103,52.46696 13.32,52.467 13.31999,52.46716</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry></Placemark></Folder></Document></kml>
