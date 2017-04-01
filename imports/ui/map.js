@@ -4,7 +4,7 @@ import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
 export default class MapContainer extends Component {
   render() {
-    const position = [51.505, -0.09];
+    const position = [52.520008, 13.404954];
     return (
       <Map center={position} zoom={13} className="o-absolute-cover c-map">
         <TileLayer
